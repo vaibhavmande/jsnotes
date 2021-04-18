@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 10rem;
+  border-bottom: 0.1rem solid silver;
+  ul > li {
+    display: inline;
+    padding: 0 0.5rem;
+  }
+}

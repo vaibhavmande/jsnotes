@@ -1,0 +1,15 @@
+.listItem {
+  padding-top: 0.2rem;
+  margin: 1rem 0;
+  border-bottom: 0.2rem solid;
+  .title {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .intro {
+    font-weight: 400;
+    font-size: 1rem;
+    // padding-bottom: 1rem;
+    // color: #6E7b81;
+  }
+}

@@ -1,0 +1,30 @@
+.hero {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+  }
+  .description {
+    font-size: 1.15rem;
+  }
+  .image {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background: url('https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  & > p {
+    margin: 0.3rem 0;
+  }
+  .divider {
+    width: 50%;
+    margin-top: 2rem;
+  }
+}
