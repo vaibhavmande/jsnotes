@@ -1,5 +1,6 @@
 .hero {
-  height: 20rem;
+  position: relative;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +9,14 @@
     font-size: 2rem;
     line-height: 2rem;
     margin: 1.5rem 0;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.2rem;
+        text-decoration-color: #5151d9;
+      }
+    }
   }
   .description {
     font-size: 1.15rem;
@@ -16,7 +25,7 @@
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
-    background: url('https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png');
+    background: url('../../public/js-white.svg');
     background-size: cover;
     background-position: center center;
   }
@@ -24,7 +33,13 @@
     margin: 0.3rem 0;
   }
   .divider {
-    width: 50%;
-    margin-top: 2rem;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 2px;
   }
 }

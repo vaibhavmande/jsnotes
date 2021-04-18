@@ -1,19 +1,24 @@
 import Head from 'next/head'
 import { Layout } from '../components/Layout'
-export default function Home({ allPostsData }) {
+import { posts } from '../content'
+
+export default function Home({ posts }) {
   return (
     <>
       <Head>
         <title>Js Notes - blog by Vaibhav Mande</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout />
+      <Layout posts={posts} />
     </>
   )
 }
 
-Home.getInitialProps = () => {
+export async function getStaticProps() {
+  const postsData = posts()
   return {
-    blogTitle: 'This is a title!',
+    props: {
+      posts: postsData,
+    },
   }
 }

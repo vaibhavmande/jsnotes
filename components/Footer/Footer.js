@@ -1,10 +1,10 @@
 import React from 'react'
+import classes from './Footer.module.scss'
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className={classes.footer}>
       <div>Made with Next.js</div>
-      <div>GitHub</div>
     </footer>
   )
 }
