@@ -1,13 +1,27 @@
 import React from 'react'
 import matter from 'gray-matter'
-import ReactMarkdown from 'react-markdown'
+import Head from 'next/head'
+import { Header } from '../../components/Header/Header'
+import { Footer } from '../../components/Footer/Footer'
+import { PostHeader } from '../../components/PostHeader/PostHeader'
+import { PostContents } from '../../components/PostContents/PostContents'
 
 function PostTemplate({ content, data }) {
   const frontmatter = data
   return (
     <>
-      <h1>{frontmatter.title}</h1>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <Head>
+        <title>Js Notes - blog by Vaibhav Mande</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <PostHeader
+        title={frontmatter.title}
+        intro={frontmatter.intro}
+        date={frontmatter.date}
+      />
+      <PostContents content={content} />
+      <Footer />
     </>
   )
 }
@@ -23,8 +37,6 @@ PostTemplate.getInitialProps = async (context) => {
 
   // Pass data to our component props
   return { ...data }
-
-  return { slug }
 }
 
 export default PostTemplate

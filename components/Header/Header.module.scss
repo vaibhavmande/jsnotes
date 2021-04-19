@@ -9,4 +9,10 @@
     display: inline;
     padding: 0 0.5rem;
   }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
