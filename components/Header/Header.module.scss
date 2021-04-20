@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 10rem;
+  border-bottom: 0.1rem solid silver;
+  ul > li {
+    display: inline;
+    padding: 0 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 32rem) {
+    padding: 0.5rem;
+    justify-content: center;
+    .first {
+      display: none;
+    }
+    .second {
+      ul {
+        padding: 0;
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

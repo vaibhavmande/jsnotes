@@ -1,0 +1,30 @@
+@keyframes slideout {
+  from {
+    padding-left: 1rem;
+  }
+  to {
+    padding-left: 0;
+  }
+}
+
+.listItem {
+  padding-top: 0.2rem;
+  margin: 1rem 0;
+  border-bottom: 0.2rem solid;
+  .title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    &:hover {
+      .arrow {
+        animation-duration: 1s;
+        animation-name: slideout;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    }
+  }
+  .intro {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}

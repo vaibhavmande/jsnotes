@@ -1,0 +1,10 @@
+.container {
+  margin: 2.5rem 10rem;
+  flex: 1;
+  @media screen and (max-width: 36.5rem) {
+    margin: 2.5rem 2rem;
+  }
+  @media screen and (min-width: 36.5rem) and (max-width: 48rem) {
+    margin: 2.5rem 5rem;
+  }
+}
