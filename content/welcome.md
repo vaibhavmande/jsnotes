@@ -9,3 +9,57 @@ intro: 'Here we will see how this blog was setup'
 - Install dependencies
 - Run locally
 - Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy
+
+## Step 1
+
+- Install dependencies
+- Run locally
+- Deploy

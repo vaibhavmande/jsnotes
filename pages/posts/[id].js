@@ -5,6 +5,7 @@ import { Header } from '../../components/Header/Header'
 import { Footer } from '../../components/Footer/Footer'
 import { PostHeader } from '../../components/PostHeader/PostHeader'
 import { PostContents } from '../../components/PostContents/PostContents'
+import styles from '../../components/Layout/Layout.module.scss'
 
 function PostTemplate({ content, data }) {
   const frontmatter = data
@@ -14,14 +15,16 @@ function PostTemplate({ content, data }) {
         <title>Js Notes - blog by Vaibhav Mande</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <PostHeader
-        title={frontmatter.title}
-        intro={frontmatter.intro}
-        date={frontmatter.date}
-      />
-      <PostContents content={content} />
-      <Footer />
+      <div className={styles.parent}>
+        <Header />
+        <PostHeader
+          title={frontmatter.title}
+          intro={frontmatter.intro}
+          date={frontmatter.date}
+        />
+        <PostContents content={content} />
+        <Footer />
+      </div>
     </>
   )
 }

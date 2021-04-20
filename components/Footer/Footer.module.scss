@@ -1,10 +1,18 @@
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: sticky;
   height: 2rem;
+  min-height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   background-color: rgba($color: #000000, $alpha: 0.08);
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.2rem;
+      text-decoration-color: #5151d9;
+    }
+  }
 }
