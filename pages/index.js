@@ -1,24 +1,31 @@
 import Head from 'next/head'
 import { Layout } from '../components/Layout/Layout'
-import { posts } from '../content'
+import { totalPosts } from '../lib/totalPosts'
+import path from 'path'
+import { promises as fs } from 'fs'
+import meta from '../lib/meta.json'
 
-export default function Home({ posts }) {
-  return (
-    <>
-      <Head>
-        <title>Js Notes - blog by Vaibhav Mande</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout posts={posts} />
-    </>
-  )
-}
+const Home = ({ posts }) => (
+  <>
+    <Head>
+      <title>Js Notes - blog by Vaibhav Mande</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    <Layout posts={posts} />
+  </>
+)
 
 export async function getStaticProps() {
-  const postsData = posts()
+  const directory = path.join(process.cwd(), 'pages/post')
+  const documents = await fs.readdir(directory)
+
+  const withMeta = documents.map((document) => meta[document] ?? null)
+
   return {
     props: {
-      posts: postsData,
+      posts: withMeta,
     },
   }
 }
+
+export default Home

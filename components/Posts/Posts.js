@@ -5,13 +5,12 @@ export const Posts = ({ posts }) => {
   return (
     <div className={styles.list}>
       {posts?.map((post, index) => {
-        const { frontmatter, slug } = post
         return (
           <Post
             key={index}
-            slug={slug}
-            title={frontmatter.title}
-            intro={frontmatter.intro}
+            title={post.title}
+            intro={post.intro}
+            slug={post.slug}
           />
         )
       })}

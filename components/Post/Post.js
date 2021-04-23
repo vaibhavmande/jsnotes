@@ -6,7 +6,7 @@ export const Post = ({ title, intro, slug }) => {
     <>
       <div className={styles.listItem}>
         <h2 className={styles.title}>
-          <Link href={`/posts/${slug}`}>
+          <Link href={`/post/${slug}`}>
             <a>
               {title} <span className={styles.arrow}>→</span>
             </a>
