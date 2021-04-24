@@ -5,13 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "next-deploy": "yarn build && yarn export",
+    "predeploy": "rm -rf out && yarn next-deploy",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^10.1.3",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.1.0",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-bootstrap": "^1.5.2",
