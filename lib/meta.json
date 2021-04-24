@@ -3,5 +3,10 @@
     "title": "Arrays",
     "intro": "JavaScript arrays quick reference",
     "slug": "arrays"
+  },
+  "flexbox.mdx": {
+    "title": "CSS Flexbox",
+    "intro": "Flexbox properties quick reference",
+    "slug": "flexbox"
   }
 }
