@@ -1,7 +1,7 @@
 {
-  "welcome.mdx": {
-    "title": "Welcome",
-    "intro": "This is a welcome post",
-    "slug": "welcome"
+  "arrays.mdx": {
+    "title": "Arrays",
+    "intro": "JavaScript arrays quick reference",
+    "slug": "arrays"
   }
 }
