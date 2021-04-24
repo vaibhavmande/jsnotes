@@ -26,9 +26,9 @@ import CodeBlock from '../../components/Document/CodeBlock'
       <Accordion.Collapse eventKey="1">
         <Card.Body>
           <CodeBlock code='map((value, index, array) => { ... })' pre="creates a new array based on returned value from callback"/>
-          <CodeBlock code='filter((currentValue, index, array) => { ... })' pre={`creates a ${'**new**'} array with all elements that pass the test`}/>
+          <CodeBlock code='filter((currentValue, index, array) => { ... })' pre="creates a new array with all elements that pass the test"/>
           <CodeBlock code='reduce((accumulator, currentValue, index, array) => { ... }, initialValue)' pre="executes a reducer function on each element of the array"/>
-          <CodeBlock code='some((element, index, array) => { ... } )' pre="returns true if at lest one element passes the test"/>
+          <CodeBlock code='some((element, index, array) => { ... } )' pre="returns true if at least one element passes the test"/>
           <CodeBlock code='every((element, index, array) => { ... } )' pre="returns true if all elements pass the test" list={[<kbd>[12, 5, 8, 130, 44].every(x => x >= 10); // false</kbd>]}/>
           <CodeBlock code='find((element, index, array) => { ... } )' pre="returns first element that passes the test" list={[<kbd>[5, 12, 8, 130, 44].find(x => x > 10); // 12</kbd>]}/>
         </Card.Body>

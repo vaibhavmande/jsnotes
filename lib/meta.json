@@ -8,5 +8,10 @@
     "title": "CSS Flexbox",
     "intro": "Flexbox properties quick reference",
     "slug": "flexbox"
+  },
+  "iteration.mdx": {
+    "title": "Iterations",
+    "intro": "Iteration in JS",
+    "slug": "iteration"
   }
 }
