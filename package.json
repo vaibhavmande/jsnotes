@@ -8,8 +8,7 @@
     "start": "next start",
     "export": "next export",
     "next-deploy": "yarn build && yarn export",
-    "predeploy": "rm -rf out && yarn next-deploy",
-    "deploy": "gh-pages -d out"
+    "deploy": "rm -rf node_modules/.cache && rm -rf out && yarn next-deploy && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",

@@ -9,7 +9,7 @@ const Home = ({ posts }) => (
   <>
     <Head>
       <title>Js Notes - blog by Vaibhav Mande</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/jsnotes/favicon.ico" />
     </Head>
     <Layout posts={posts} />
   </>
