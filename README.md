@@ -12,13 +12,9 @@
 
 ## About
 
----
-
 This blog contains multiple JS articles for quick reference. This website is made using [Next.js](https://nextjs.org/ 'Next.js') and [MDX](https://mdxjs.com/ 'MDX'). View **website** at [jsnotes]('https://vaibhavmande.com/jsnotes' 'jsnotes')
 
 ## Installation
-
----
 
 Download the code and from the root run
 
@@ -30,8 +26,6 @@ This will run the blog in development mode at port `3000`
 
 ## Deploy
 
----
-
 ```bash
 yarn build
 ```
@@ -42,12 +36,8 @@ This will build and export files into `out` folder and also push it to `gh-pages
 
 ## Demo
 
----
-
 The site is hosted at [jsnotes]('https://vaibhavmande.com/jsnotes' 'jsnotes')
 
 ## License
-
----
 
 [MIT](https://choosealicense.com/licenses/mit/)
