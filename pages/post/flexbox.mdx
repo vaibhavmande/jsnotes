@@ -1,0 +1,45 @@
+import { Accordion, Card, ListGroup } from 'react-bootstrap'
+import { Container } from '../../components/Document/Container'
+import { Header } from '../../components/Header/Header'
+import CodeBlock from '../../components/Document/CodeBlock'
+
+<Header />
+<Container>
+  <Accordion defaultActiveKey="0">
+    <Card>
+      <Accordion.Toggle as={Card.Header} eventKey="0">
+        row, column
+      </Accordion.Toggle>
+      <Accordion.Collapse eventKey="0">
+        <Card.Body>
+          <CodeBlock code='row' pre="main axis horizontal"/>
+          <CodeBlock code='column' pre="main axis vertical"/>
+        </Card.Body>
+      </Accordion.Collapse>
+    </Card>
+    <Card>
+      <Accordion.Toggle as={Card.Header} eventKey="1">
+        justify-content, align-items, align-content
+      </Accordion.Toggle>
+      <Accordion.Collapse eventKey="1">
+        <Card.Body>
+          <CodeBlock code='justify-content' pre="align elements on main axis"/>
+          <CodeBlock code='align-items' pre="align elements on cross axis"/>
+          <CodeBlock code='align-content' pre="if content more than one line, distribute space around each line across cross axis"/>
+        </Card.Body>
+      </Accordion.Collapse>
+      <Accordion.Toggle as={Card.Header} eventKey="2">
+        CHILDREN => order, flex-grow, flex-basis, flex-shrink, align-self
+      </Accordion.Toggle>
+      <Accordion.Collapse eventKey="2">
+        <Card.Body>
+          <CodeBlock code='order' pre="change order, make item display before another item"/>
+          <CodeBlock code='flex-grow' pre="grow an item and take avilable space if necessary" list={[<kbd>1, then every child will take equal, 2 means child will take twice space than others</kbd>]}/>
+          <CodeBlock code='flex-basis' pre="initial size of item before space is allocated"/>
+          <CodeBlock code='flex-shrink' pre="how much the item will shrink relative to other items"/>
+          <CodeBlock code='align-self' pre="align individual item"/>
+        </Card.Body>
+      </Accordion.Collapse>
+    </Card>
+  </Accordion>
+</Container>

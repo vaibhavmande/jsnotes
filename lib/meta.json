@@ -1,7 +1,17 @@
 {
-  "welcome.mdx": {
-    "title": "Welcome",
-    "intro": "This is a welcome post",
-    "slug": "welcome"
+  "arrays.mdx": {
+    "title": "Arrays",
+    "intro": "JavaScript arrays quick reference",
+    "slug": "arrays"
+  },
+  "flexbox.mdx": {
+    "title": "CSS Flexbox",
+    "intro": "Flexbox properties quick reference",
+    "slug": "flexbox"
+  },
+  "iteration.mdx": {
+    "title": "Iterations",
+    "intro": "Iteration in JS",
+    "slug": "iteration"
   }
 }
